@@ -42,13 +42,35 @@ img {
 }
 
 .section {
-  padding: 120px 0;
+  padding: 96px 0;
 }
+
+@media screen and (min-width:1158px) {
+  .section {
+      padding: 120px 0;
+    }
+  
+}
+
+
 .container {
-  width: 1158px;
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
+  min-width: 320px;
+  max-width: 396px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width:768px) {
+  .container {
+      max-width: 736px;
+    }
+}
+
+@media screen and (min-width:1158px) {
+  .container {
+    max-width: 1128px;
+    padding: 0 15px;
+  }
 }
 
 .current.link {
@@ -70,7 +92,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--primary-brand-color);
 }
 
