@@ -45,13 +45,11 @@ img {
   padding: 96px 0;
 }
 
-@media screen and (min-width:1158px) {
+@media screen and (min-width: 1158px) {
   .section {
-      padding: 120px 0;
-    }
-  
+    padding: 120px 0;
+  }
 }
-
 
 .container {
   min-width: 320px;
@@ -60,13 +58,13 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .container {
-      max-width: 736px;
-    }
+    max-width: 736px;
+  }
 }
 
-@media screen and (min-width:1158px) {
+@media screen and (min-width: 1158px) {
   .container {
     max-width: 1128px;
     padding: 0 15px;
@@ -109,18 +107,15 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-
   color: var(--dark-color);
 }
 
-.subtitle {
-  font-weight: 500;
+@media screen and (min-width: 1158px) {
+  .subtitle {
+font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-align: center;
-
-  color: var(--dark-color);
+  }
 }
 
 .primary-text {
@@ -225,10 +220,11 @@ img {
 .hero {
   text-align: center;
   background-color: var(--dark-color);
-  padding: 188px 0;
+  padding: 112px 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.hero-bg {
+
+/* .hero-bg {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -240,22 +236,16 @@ img {
   background-size: cover;
   max-width: 1440px;
   min-height: 480px;
-  margin-right: auto;
-  margin-left: auto;
-
+  margin: 0 auto;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+} */
 
 .hero-title {
-  max-width: 496px;
-  margin: 0 auto 48px;
-
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-
-  letter-spacing: 0.02em;
-
+  text-align: center;
+  width: 320px;
+  margin: 0 auto 72px;
+  font-size: 36px;
+  line-height: 1.11;
   color: var(--bg-color);
 }
 
@@ -277,6 +267,25 @@ img {
   background-color: var(--pressed-state-color);
 }
 
+@media screen and (min-width: 768px) {
+  .hero {}
+  .hero-title {
+    width: 496px;
+    margin: 0 auto 36px;
+    font-size: 56px;
+    line-height: 1.07;
+    color: var(--bg-color);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero {
+    padding: 188px 0;
+  }
+  .hero-title {
+    margin: 0 auto 48px;
+  }
+}
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Feature section - Studio*/
 
 .features {
@@ -287,16 +296,17 @@ img {
 
 .features-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap-team-card);
+  flex-direction: column;
+  gap: 72px;
+
 }
 
 .features-item {
-  flex-basis: calc((100% - 3 * var(--gap-team-card)) / 4);
+  
 }
 
 .features-subtitle {
-  text-align: left;
+  text-align: center;
   margin-bottom: 8px;
 }
 
@@ -304,19 +314,45 @@ img {
 }
 
 .features-icon-bg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 8px;
-  border-radius: 4px;
-  background: var(--light-bg-color);
-  height: 112px;
+  display: none;
+
 }
 
 .features-icon {
   margin: 0;
   width: 64px;
   height: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .features-subtitle {
+      text-align: left;
+  }
+  .features-list {
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap: var(--gap-team-card);
+    }
+  
+    .features-item {
+      flex-basis: calc((100% - 1 * var(--gap-team-card)) / 2);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+  .features-icon-bg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 8px;
+      border-radius: 4px;
+      background: var(--light-bg-color);
+      height: 112px;
+    }
+    
+        .features-item {
+          flex-basis: calc((100% - 3 * var(--gap-team-card)) / 4);
+        }
 }
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Examples - Studio*/
@@ -375,6 +411,11 @@ img {
 
 .team-subtitle {
   margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--dark-color);
 }
 
 .team-desc {
