@@ -403,13 +403,12 @@ img {
 }
 
 .team-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap-team-card);
+  
 }
 
 .team-item {
-  flex-basis: calc((100% - 3 * var(--gap-team-card)) / 4);
+  max-width: 264px;
+  margin: 0 auto 72px;
   background-color: var(--bg-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -457,6 +456,27 @@ img {
 .social-team-card:hover,
 .social-team-card:focus {
   background-color: var(--pressed-state-color);
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: calc(3 * var(--gap-team-card));
+    }
+}
+
+@media screen and (min-width: 1158px) {
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-team-card);
+  }
+
+    .team-item {
+      flex-basis: calc((100% - 3 * var(--gap-team-card)) / 4);
+
+    }
 }
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Customers */
