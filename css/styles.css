@@ -218,6 +218,7 @@ img {
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Hero section - Studio*/
 
 .hero {
+  min-width: 320px;
   text-align: center;
   background-color: var(--dark-color);
   padding: 112px 0;
@@ -395,6 +396,7 @@ img {
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Our Team - Studio*/
 
 .team {
+  min-width: 320px;
   background-color: var(--light-bg-color);
 }
 
@@ -403,11 +405,10 @@ img {
 }
 
 .team-list {
-  
 }
 
 .team-item {
-  max-width: 264px;
+  width: 264px;
   margin: 0 auto 72px;
   background-color: var(--bg-color);
   border-radius: 0px 0px 4px 4px;
@@ -460,23 +461,25 @@ img {
 
 @media screen and (min-width: 768px) {
   .team-list {
-      display: flex;
-      flex-direction: column;
-      row-gap: calc(3 * var(--gap-team-card));
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: var(--gap-team-card);
+    row-gap: 64px;
+  }
+  .team-item {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 1158px) {
-.team-list {
-    display: flex;
-    flex-wrap: wrap;
+  .team-list {
     gap: var(--gap-team-card);
   }
 
-    .team-item {
-      flex-basis: calc((100% - 3 * var(--gap-team-card)) / 4);
-
-    }
+  .team-item {
+    flex-basis: calc((100% - 3 * var(--gap-team-card)) / 4);
+  }
 }
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Customers */
