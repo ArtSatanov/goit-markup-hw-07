@@ -327,12 +327,11 @@ img {
     text-align: left;
   }
   .features-list {
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
     row-gap: calc(3 * var(--gap-team-card));
     column-gap: var(--gap-team-card);
   }
-
 
   .features-item {
     flex-basis: calc((100% - 1 * var(--gap-team-card)) / 2);
@@ -385,6 +384,12 @@ img {
 }
 
 .examples-img {
+}
+
+@media screen and (max-width: 1157px) {
+  .examples {
+    display: none;
+  }
 }
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Our Team - Studio*/
