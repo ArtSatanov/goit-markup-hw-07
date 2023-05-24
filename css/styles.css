@@ -215,28 +215,25 @@ img {
 }
 @media screen and (max-width: 767px) {
   .header-cont-list {
-      display: none;
-    }
-        .header-address {
-          font-style: normal;
-        }
-                .header-nav-list {
-                  display: none;
-        
-                }
+    display: none;
+  }
+  .header-address {
+    font-style: normal;
+  }
+  .header-nav-list {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
 
 
 }
 
-  @media screen and (min-width: 1158px) {
-    .header-nav-logo {
-        margin-right: 76px;
-
-          padding: 24px 0;
-      }
-
+@media screen and (min-width: 1158px) {
+  .header-nav-logo {
+    margin-right: 76px;
+    padding: 24px 0;
+  }
   }
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Hero section - Studio*/
