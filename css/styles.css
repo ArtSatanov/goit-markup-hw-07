@@ -52,6 +52,7 @@ img {
 }
 
 .container {
+  min-width: 320px;
   max-width: 428px;
   padding: 0 16px;
   margin: 0 auto;
@@ -152,8 +153,7 @@ img {
 
 .header-nav-logo {
   display: block;
-  padding: 24px 0;
-  margin-right: 76px;
+
 }
 
 .header-nav-link {
@@ -213,6 +213,31 @@ img {
 .header-cont-link:focus {
   color: var(--pressed-state-color);
 }
+@media screen and (max-width: 767px) {
+  .header-cont-list {
+      display: none;
+    }
+        .header-address {
+          font-style: normal;
+        }
+                .header-nav-list {
+                  display: none;
+        
+                }
+}
+@media screen and (min-width: 768px) {
+
+
+}
+
+  @media screen and (min-width: 1158px) {
+    .header-nav-logo {
+        margin-right: 76px;
+
+          padding: 24px 0;
+      }
+
+  }
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Hero section - Studio*/
 
