@@ -192,7 +192,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin: 16px 0;
 }
 
 .header-cont-item {
@@ -220,7 +219,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px 0;
+  margin: 24px 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -230,8 +229,9 @@ img {
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: transparent;
 }
+
 
 @media screen and (max-width: 767px) {
   .header-cont-list {
@@ -1153,9 +1153,9 @@ footer .container {
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Mobile menu */
 
-.menu-toggle {
-  /* min-height: 40px;
-  min-width: 40px; */
+/* .menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1167,12 +1167,7 @@ footer .container {
   border: none;
   border-radius: 50%;
   outline: none;
-}
-
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
+} */
 
 .menu-container {
   position: fixed;
