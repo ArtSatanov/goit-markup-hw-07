@@ -1162,7 +1162,7 @@ footer .container {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 0 35px 0 40px;
   background-color: var(--bg-color);
   z-index: 999;
 
@@ -1183,7 +1183,6 @@ footer .container {
 .mobile-menu .link {
   display: block;
   text-align: left;
-  padding: 10px;
   text-decoration: none;
 }
 
@@ -1196,9 +1195,6 @@ footer .container {
   color: var(--main-text-color);
 }
 
-.menu-container > .address {
-  padding-left: 10px;
-}
 .mobmenu-cont-item {
   margin-bottom: 40px;
 }
@@ -1210,7 +1206,6 @@ footer .container {
 .menu-container > .social-list.list {
   max-width: 328px;
   gap:56px;
-  padding-left: 10px;
 }
 
 .menu-toggle.button-close {
