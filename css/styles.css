@@ -110,12 +110,14 @@ img {
   color: var(--dark-color);
 }
 
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
 @media screen and (min-width: 1158px) {
-  .subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-  }
+  
 }
 
 .primary-text {
@@ -1180,7 +1182,7 @@ footer .container {
 
 .mobile-menu {
   padding: 0;
-  margin: 0;
+  margin: 0 0 284px;
   list-style: none;
 }
 
@@ -1191,6 +1193,11 @@ footer .container {
   text-decoration: none;
 }
 
+.highlight {
+  color: var(--pressed-state-color);
+}
+
+.
 
 
 @media (min-width: 768px) {
