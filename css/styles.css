@@ -1193,18 +1193,35 @@ footer .container {
   text-decoration: none;
 }
 
-.highlight {
+.mobmenu-cont-item a[href="tel:+110001111111"],
+.mobile-menu a[href=""] {
   color: var(--pressed-state-color);
+}
+
+.mobmenu-cont-item a[href="mailto:info@devstudio.com"] {
+  color: var(--main-text-color);
 }
 
 .menu-container > .address {
   padding-left: 10px;
+}
+.mobmenu-cont-item {
+  margin-bottom: 40px;
 }
 
 .address {
   margin-bottom: 48px;
 }
 
+.menu-container > .social-list.list {
+  max-width: 328px;
+  gap:56px;
+  padding-left: 10px;
+}
+
+.menu-toggle.button-close {
+  background-color: var(--bg-color);
+}
 
 @media (min-width: 768px) {
   .menu-toggle {
