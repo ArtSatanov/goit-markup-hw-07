@@ -112,13 +112,40 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-link link">
                 <div class="team-thumb">
-                  <img
-                    src="./images/project_cards/img-8.jpg"
-                    alt="Banking App Interface Concept"
-                    width="360"
-                    height="300"
-                    class="portfolio-img"
-                  />
+                  <picture>
+                    <!-- desktop -->
+                    <source
+                      srcset="
+                        ./images/project_cards/img_360desk.jpg    1x,
+                        ./images/project_cards/img_360desk@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      srcset="
+                        ./images/project_cards/img_356tab.jpg    1x,
+                        ./images/project_cards/img_356tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      srcset="
+                        ./images/project_cards/img_396mob.jpg    1x,
+                        ./images/project_cards/img_396mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="portfolio-img"
+                      src="./images/project_cards/img_396mob.jpg"
+                      alt="Banking App Interface Concept"
+                      width="396"
+                      height="300"
+                      loading="lazy"
+                    />
+                  </picture>
 
                   <p class="overlay-text primary-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
